@@ -16,8 +16,6 @@ import javax.swing.JOptionPane;
  * @author acer
  */
 public class bai1 extends javax.swing.JFrame {
-    List<Student> list = new ArrayList();
-
     public bai1() {
         initComponents();
         setLocationRelativeTo(null);
@@ -33,7 +31,7 @@ public class bai1 extends javax.swing.JFrame {
         cbxQualification.setModel(model);
     }
 
-    public String GetName() {
+    public String GetNameFame() {
         return txtName.getText();
     }
 
@@ -70,11 +68,15 @@ public class bai1 extends javax.swing.JFrame {
     }
 
     public void ThongTin() {
-        String name = getName();
+        String name = GetNameFame();
         String qualification = GetQualification();
         String address = GetAddress();
         String sex = GetSex();
         String hobby = GetHobby();
+        if (name.equals("") || qualification.equals("") || address.equals("") || sex.equals("") || hobby.equals("")) {
+            JOptionPane.showMessageDialog(this, "Nhập đủ thông tin");
+            return;
+        }
         JOptionPane.showMessageDialog(this,
                 "Name: " + name + "\nAddress: " + address + "\nQualification: "
                         + qualification +
