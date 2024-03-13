@@ -5,9 +5,6 @@
  */
 package lab2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
@@ -87,14 +84,12 @@ public class bai1 extends javax.swing.JFrame {
         txtName.setText("");
         txtAddress.setText("");
         cbxQualification.setSelectedIndex(0);
-        rdoMale.setSelected(false);
-        rdoFemale.setSelected(false);
+        buttonGroup1.clearSelection();
         chkReading.setSelected(false);
         chkSinging.setSelected(false);
         chkDancing.setSelected(false);
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
