@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 
@@ -27,13 +28,22 @@ public class bai3_codeTay {
         btnIDiglog = new JButton("Input Diglog");
         btnCDiglog = new JButton("Confirm Diglog");
         btnODiglog = new JButton("Oprion Diglog");
-        JPanel pn = new JPanel();
-        pn.setLayout(new GridLayout(2, 2));
-        pn.add(btnMDialog);
-        pn.add(btnIDiglog);
-        pn.add(btnCDiglog);
-        pn.add(btnODiglog);
-        f.add(pn);
+        JPanel pn1 = new JPanel();
+        JPanel pn2 = new JPanel();
+        JPanel pn3 = new JPanel();
+        JPanel pn4 = new JPanel();
+        pn1.setLayout(new FlowLayout());
+        pn2.setLayout(new FlowLayout());
+        pn3.setLayout(new FlowLayout());
+        pn4.setLayout(new FlowLayout());
+        pn1.add(btnMDialog);
+        pn2.add(btnIDiglog);
+        pn3.add(btnCDiglog);
+        pn4.add(btnODiglog);
+        f.add(pn1);
+        f.add(pn2);
+        f.add(pn3);
+        f.add(pn4);
 
         btnMDialog.addActionListener((ActionEvent e) -> {
             JOptionPane.showMessageDialog(null, "Please input your name");

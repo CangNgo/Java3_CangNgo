@@ -1,19 +1,17 @@
-package lab3;
+package lab3.codeTay;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
-public class bai1 {
-    public bai1() {
+public class bai1_code_tay {
+    public bai1_code_tay() {
         CreateJFrame();
     }
 
@@ -78,6 +76,6 @@ public class bai1 {
     }
 
     public static void main(String[] args) {
-        new bai1();
+        new bai1_code_tay();
     }
 }

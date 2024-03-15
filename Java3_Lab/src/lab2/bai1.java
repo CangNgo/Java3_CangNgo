@@ -20,7 +20,7 @@ public class bai1 extends javax.swing.JFrame {
 
     }
 
-    @SuppressWarnings("rawtypes")
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public void initComBoBox() {
         DefaultComboBoxModel model = new DefaultComboBoxModel<>();
         model.addElement("Garduate");
@@ -286,12 +286,12 @@ public class bai1 extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void btnValidateActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         ThongTin();
     }
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         Reset();
     }
 

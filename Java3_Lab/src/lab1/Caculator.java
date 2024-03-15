@@ -38,7 +38,7 @@ public class Caculator extends javax.swing.JFrame {
             @SuppressWarnings("unused")
             double first = Double.parseDouble(txtFrist.getText());
         } catch (Exception e) {
-            // TODO: handle exception
+
             JOptionPane.showMessageDialog(this, "Xin mời nhập first number là số");
             return false;
         }
@@ -46,7 +46,7 @@ public class Caculator extends javax.swing.JFrame {
             @SuppressWarnings("unused")
             double second = Double.parseDouble(txtSecond.getText());
         } catch (Exception e) {
-            // TODO: handle exception
+
             JOptionPane.showMessageDialog(this, "Xin mời nhập second number là số");
             return false;
         }
@@ -212,22 +212,22 @@ public class Caculator extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         Calculus("-");
     }
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         Calculus("+");
     }
 
     private void btnMultiActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         Calculus("*");
     }
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         Calculus("/");
     }
 

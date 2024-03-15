@@ -44,7 +44,7 @@ public class bai2 extends JFrame {
         try {
             Double.parseDouble(txtFrist.getText());
         } catch (NumberFormatException e) {
-            // TODO: handle exception
+
             JOptionPane.showMessageDialog(this, "Xin mời nhập first number là số");
             txtFrist.setText("");
             return false;
@@ -52,7 +52,7 @@ public class bai2 extends JFrame {
         try {
             Double.parseDouble(txtSecond.getText());
         } catch (NumberFormatException e) {
-            // TODO: handle exception
+
             JOptionPane.showMessageDialog(this, "Xin mời nhập second number là số");
             txtSecond.setText("");
             return false;

@@ -17,6 +17,8 @@ public class bai2 extends javax.swing.JFrame {
     public void Reset() {
         so1 = "";
         so2 = "";
+        so1db = "";
+        so2db = "";
         pheptinh = "";
         dacbiet = "";
         lblDisplay.setText("0");
@@ -27,7 +29,7 @@ public class bai2 extends javax.swing.JFrame {
         double no2 = Double.parseDouble(so2);
         switch (pheptinh) {
             case "+": {
-                if (dacbiet.equals("")) {
+                if (so1db.equals("")) {
                     lblBrand.setText(so1 + " " + pheptinh + " " + so2);
                 } else {
                     lblBrand.setText(so1db + " " + pheptinh + " " + so2db);
@@ -37,26 +39,37 @@ public class bai2 extends javax.swing.JFrame {
                 break;
             }
             case "-": {
-                if (dacbiet.equals("")) {
+                if (so1db.equals("")) {
+                    lblBrand.setText(so1 + " " + pheptinh + " " + so2);
                     lblBrand.setText(so1 + " " + pheptinh + " " + so2);
                 } else {
                     lblBrand.setText(so1db + " " + pheptinh + " " + so2db);
+                    lblBrand.setText(so1db + " " + pheptinh + " " + so2db);
                 }
-                lblBrand.setText(so1 + " " + pheptinh + " " + so2);
                 double result = no1 - no2;
                 lblDisplay.setText(String.valueOf(result));
                 break;
             }
 
             case "*": {
+                if (so1db.equals("")) {
+                    lblBrand.setText(so1 + " " + pheptinh + " " + so2);
+                } else {
+                    lblBrand.setText(so1db + " " + pheptinh + " " + so2db);
+                }
                 lblBrand.setText(so1 + " " + pheptinh + " " + so2);
                 double result = no1 * no2;
                 lblDisplay.setText(String.valueOf(result));
                 break;
             }
             case "/": {
+                if (so1db.equals("")) {
+                    lblBrand.setText(so1 + " " + pheptinh + " " + so2);
+                } else {
+                    lblBrand.setText(so1db + " " + pheptinh + " " + so2db);
+                }
                 lblBrand.setText(so1 + " " + pheptinh + " " + so2);
-                double result = no1 / no2;
+                double result = ((no1 * 10) / no2) * 0.1;
                 lblDisplay.setText(String.valueOf(result));
                 break;
             }
@@ -546,104 +559,104 @@ public class bai2 extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("2");
     }
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("1");
     }
 
     private void btnSqrtActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         OperatorDB("sqrt");
     }
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         operator("/");
     }
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("3");
     }
 
     private void btnModActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         OperatorDB("%");
 
     }
 
     private void btnMultiActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         operator("*");
     }
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("6");
     }
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("5");
     }
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("4");
     }
 
     private void btnFractionActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         OperatorDB("1/x");
 
     }
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         operator("-");
     }
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("8");
     }
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("7");
     }
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("9");
     }
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         operator("+");
     }
 
     private void btnRevertActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         DoiDau();
     }
 
     private void btnEqualsActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         ThucHien();
     }
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         Reset();
     }
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+
         GetNumber1("0");
     }
 
