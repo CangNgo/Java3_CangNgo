@@ -1,4 +1,4 @@
-package lab2;
+package lab2.code_tay;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

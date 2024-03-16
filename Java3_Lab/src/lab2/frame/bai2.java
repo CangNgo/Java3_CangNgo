@@ -1,4 +1,4 @@
-package lab2;
+package lab2.frame;
 
 public class bai2 extends javax.swing.JFrame {
 

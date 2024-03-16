@@ -71,6 +71,17 @@ public class bai1_code_tay {
         frame.add(pnBorderLayout);
         frame.add(pnTextfield);
         frame.add(pnGridLayout);
+
+        // event
+        btnRed.addActionListener(e -> {
+            pnFlowLayout.setBackground(Color.red);
+        });
+        btnGreen.addActionListener(e -> {
+            pnFlowLayout.setBackground(Color.green);
+        });
+        btnYellow.addActionListener(e -> {
+            pnFlowLayout.setBackground(Color.yellow);
+        });
         // hien thi frame
         frame.setVisible(true);
     }

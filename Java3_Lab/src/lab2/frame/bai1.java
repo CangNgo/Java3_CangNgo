@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab2;
+package lab2.frame;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;

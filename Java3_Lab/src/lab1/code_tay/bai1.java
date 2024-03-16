@@ -1,4 +1,4 @@
-package lab1;
+package lab1.code_tay;
 
 import java.awt.Color;
 import java.awt.FlowLayout;

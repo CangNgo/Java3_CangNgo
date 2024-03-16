@@ -1,5 +1,7 @@
-package lab1;
+package lab1.code_tay;
 
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Panel;
@@ -30,21 +32,25 @@ public class bai3 {
 
         // tao panel
         Panel panel1 = new Panel();
-        Panel panel2 = new Panel();
+        Panel panel2 = new Panel(new FlowLayout());
         Panel panel3 = new Panel();
         // add item cho panel 1
         panel1.setLayout(new GridLayout(5, 1));
         lblUser = new JLabel("Username");
         lblPass = new JLabel("Password");
         lblConfirm = new JLabel("Confirm");
+
+        // addd item cho panel 2
+        panel2.setLayout(new GridLayout(4, 1));
+        txtUser = new JTextField(10);
+        txtUser.setPreferredSize(new Dimension(txtUser.getPreferredSize().width, 30));
+        txtPass = new JPasswordField(10);
+        txtPass.setPreferredSize(new Dimension(txtPass.getPreferredSize().width, 10));
+        txtConfirm = new JPasswordField(10);
+        txtConfirm.setPreferredSize(new Dimension(txtConfirm.getPreferredSize().width, 10));
         panel1.add(lblUser);
         panel1.add(lblPass);
         panel1.add(lblConfirm);
-        // addd item cho panel 2
-        panel2.setLayout(new GridLayout(4, 1));
-        txtUser = new JTextField(1);
-        txtPass = new JPasswordField(1);
-        txtConfirm = new JPasswordField(1);
         panel2.add(txtUser);
         panel2.add(txtPass);
         panel2.add(txtConfirm);

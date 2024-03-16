@@ -171,18 +171,14 @@ public class slider extends javax.swing.JFrame {
 
     private void sldYellowStateChanged(javax.swing.event.ChangeEvent evt) {
         // TODO add your handling code here:
-        int red = sldRed.getValue();
-        int yellow = sldYellow.getValue();
-        int green = sldGreen.getValue();
-        pnColor.setBackground(new Color(red, yellow, green));
+        sldRedStateChanged(evt);
+
     }
 
     private void sldGreenStateChanged(javax.swing.event.ChangeEvent evt) {
         // TODO add your handling code here:
-        int red = sldRed.getValue();
-        int yellow = sldYellow.getValue();
-        int green = sldGreen.getValue();
-        pnColor.setBackground(new Color(red, yellow, green));
+        sldRedStateChanged(evt);
+
     }
 
     /**
